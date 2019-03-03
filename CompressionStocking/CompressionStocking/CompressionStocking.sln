@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.329
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CompressionStocking", "CompressionStocking\CompressionStocking.csproj", "{4648C081-BF52-41C8-A6B6-84E09432E272}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CompressionStocking.console", "CompressionStocking.console\CompressionStocking.console.csproj", "{2313EF34-1779-4477-B830-EA489B7C3B06}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{4648C081-BF52-41C8-A6B6-84E09432E272}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4648C081-BF52-41C8-A6B6-84E09432E272}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4648C081-BF52-41C8-A6B6-84E09432E272}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4648C081-BF52-41C8-A6B6-84E09432E272}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2313EF34-1779-4477-B830-EA489B7C3B06}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2313EF34-1779-4477-B830-EA489B7C3B06}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2313EF34-1779-4477-B830-EA489B7C3B06}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2313EF34-1779-4477-B830-EA489B7C3B06}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {9F4A635C-DBF0-4048-AD6C-928429774EC5}
+	EndGlobalSection
+EndGlobal

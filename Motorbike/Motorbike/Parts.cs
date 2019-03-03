@@ -55,6 +55,7 @@ namespace Motorbike
         private IEngine _engine = null;
         public MotorBike(IEngine engine)
         {
+            _engine = new DieselEngine();
             _engine = engine;
         }
         void RunAtHalfSpeed()
