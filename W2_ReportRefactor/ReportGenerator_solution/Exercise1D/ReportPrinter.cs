@@ -4,12 +4,10 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace ReportGenerator.Console
+namespace Exercise1D
 {
-    class Program
+    internal interface ReportPrinter
     {
-        static void Main(string[] args)
-        {
-        }
+        void PrintReport(List<Employee> employeeList);
     }
 }
