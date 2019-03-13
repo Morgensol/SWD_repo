@@ -8,10 +8,10 @@
         Title="MainWindow" Height="450" Width="800"
         DataContext="{Binding Source={StaticResource ViewModelLocator}, Path=MainWindowViewModel}">
     <Grid>
-        
+
         <Grid.ColumnDefinitions>
-            <ColumnDefinition Width="200"/>
-            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="252"/>
+            <ColumnDefinition/>
         </Grid.ColumnDefinitions>
         <Grid.RowDefinitions>
             <RowDefinition Height="50"/>
@@ -19,10 +19,18 @@
         </Grid.RowDefinitions>
 
         <Grid Grid.Row="0" Grid.Column="0">
-            <Button Margin="5"  Command="{Binding ChangeTitleCommand}">
-                <TextBlock Text="{Binding Title}"></TextBlock>
+            <Button Margin="273,48,-263,-38"  Command="{Binding ChangeTitleCommand}" Click="Button_Click">
+                <TextBlock Text="Add"></TextBlock>
             </Button>
+            <Label x:Name="label" Content="Debtors" HorizontalAlignment="Left" Margin="43,0,0,0" VerticalAlignment="Top" Height="50" Width="134" FontSize="30" />
         </Grid>
+        <ListView x:Name="listView" HorizontalAlignment="Left" Height="359" Margin="10,0,0,0" Grid.Row="1" VerticalAlignment="Top" Width="232">
+            <ListView.View>
+                <GridView>
+                    <GridViewColumn/>
+                </GridView>
+            </ListView.View>
+        </ListView>
 
     </Grid>
 </Window>

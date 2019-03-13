@@ -11,16 +11,16 @@ namespace MVVMSampleProject
         public MainWindowViewModel(Navigation navigation)
         {
             _navigation = navigation;
-            ChangeTitleCommand = new RelayCommand(OnChangeTitle);
+            AddButtonPressed = new RelayCommand(OnAddButtonClickedCmd);
         }
 
-        private void OnChangeTitle()
+        private void OnAddButtonClickedCmd()
         {
             Title = "Changed Title";
         }
 
         public event PropertyChangedEventHandler PropertyChanged = delegate { }; // Delegate makes sure it is not at any point
-        public RelayCommand ChangeTitleCommand { get; private set; }
+        public RelayCommand AddButtonPressed { get; private set; }
 
         public string Title
         {
