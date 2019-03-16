@@ -3,13 +3,12 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using System.Windows;
 
 namespace MVVMSampleProject
 {
     public class Navigation
     {
-        private const string AddDebtorViewModel = "MVVMSampleProject.viewmodel.AddDebtorViewModel";
+        private const string MainWindowViewModel = "MVVMSampleProject.MainWindowViewModel";
 
         public Navigation()
         {
@@ -20,15 +19,7 @@ namespace MVVMSampleProject
         {
             switch (viewModel.GetType().FullName)
             {
-                case AddDebtorViewModel:
-                    var debtorWindow = new AddDebtorWindow(); 
-                    var window = new Window()
-                    {
-                        Title = "DebtorView",
-                        Content = debtorWindow,
-                    };
-                    window.Show();
-
+                case MainWindowViewModel:
                     /* TO DO: 
                      *  Create new user control based on type of viewmodel
                      *  Make a new window with that user control
