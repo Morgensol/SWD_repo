@@ -41,8 +41,16 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="CompressionCtrl.cs" />
+    <Compile Include="ConsoleInput.cs" />
+    <Compile Include="ICompressionCtrl.cs" />
+    <Compile Include="IInputHandler.cs" />
+    <Compile Include="IPump.cs" />
     <Compile Include="Parts.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Pump.cs" />
+    <Compile Include="StockingController.cs" />
+    <Compile Include="UserInterface.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
